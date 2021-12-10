@@ -21,11 +21,11 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly efficient and reliable, in addition to restricting traffic to the network.
-..* Load balancers help divvy out traffic to multiple servers instead of having the traffic impact just one machine, which not only improves performance but helps prevent denial-of-service attacks. The purpose of the jump box is to centralize all administrative tasks, allowing security monitoring to be performed on a single machine.
+-  Load balancers help divvy out traffic to multiple servers instead of having the traffic impact just one machine, which not only improves performance but helps prevent denial-of-service attacks. The purpose of the jump box is to centralize all administrative tasks, allowing security monitoring to be performed on a single machine.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-..* Filebeat watches for changes to log files
-..* Metricbeat monitors system metrics and services
+-  Filebeat watches for changes to log files
+-  Metricbeat monitors system metrics and services
 
 The configuration details of each machine may be found below.
 
@@ -58,10 +58,10 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which allows for rapid deployment.
 
 The playbook implements the following tasks:
-..* Install Docker
-..* Install Python and the Python Docker Module
-..* Download and launch the Docker web container
-..* Enable the Docker service
+-  Install Docker
+-  Install Python and the Python Docker Module
+-  Download and launch the Docker web container
+-  Enable the Docker service
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -70,13 +70,13 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-..* Jump-Box 10.0.0.4
-..* Web-1 10.0.0.5
-..* Web-2 10.0.0.6
+-  Jump-Box 10.0.0.4
+-  Web-1 10.0.0.5
+-  Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
-..* Filebeat
-..* Metricbeat
+-  Filebeat
+-  Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 Filebeat collects data on file logs,
@@ -84,8 +84,8 @@ Filebeat collects data on file logs,
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-..* Filebeat watches for changes to log files, which we can use to pull info on events like login attempts, deprecation logs
-..* Metricbeat monitors system metrics and services
+-  Filebeat watches for changes to log files, which we can use to pull info on events like login attempts, deprecation logs
+-  Metricbeat monitors system metrics and services
 
 
 SSH into the control node and follow the steps below:
