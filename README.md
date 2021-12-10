@@ -87,7 +87,6 @@ In order to use the playbook, you will need to have an Ansible control node alre
 -  Filebeat watches for changes to log files, which we can use to pull info on events like login attempts, deprecation logs
 -  Metricbeat monitors system metrics and services
 
-
 SSH into the control node and follow the steps below:
 - Copy the _____ file to _____.
 - Update the _____ file to include...
