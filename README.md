@@ -84,18 +84,10 @@ These Beats allow us to collect the following information from each machine:
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 -  Filebeat watches for changes to log files, which we can use to pull info on events like login attempts and deprecation logs.
 -  Metricbeat monitors system metrics and services, allowing us to pinpoint any given time when system resources are utilized.
 
 SSH into the control node and follow the steps below:
 - Copy the [install-elk.yml](https://github.com/GarinJTanner/Azure/blob/main/Ansible/install-elk.yml) and [ansible.cfg](https://github.com/GarinJTanner/Azure/blob/main/Ansible/ansible.cfg) file to /etc/ansible.
 - Update the [ansible.cfg](https://github.com/GarinJTanner/Azure/blob/main/Ansible/ansible.cfg) file to include remote_user = azadmin
-- Run the playbook, and navigate to http://23.102.1.176:5601/app/kibana to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- Run the playbook by typing 'ansible-playbook install-elk.yml'. Once finished, navigate to http://23.102.1.176:5601/app/kibana to check that the installation worked as expected.
