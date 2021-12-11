@@ -89,8 +89,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 -  Metricbeat monitors system metrics and services, allowing us to pinpoint any given time when system resources are utilized.
 
 SSH into the control node and follow the steps below:
-- Copy the [ansible.cfg](https://github.com/GarinJTanner/Azure/blob/main/Ansible/ansible.cfg) file to /etc/ansible.
-- Update the ansible.cfg file to include remote_user = azadmin
+- Copy the [install-elk.yml](https://github.com/GarinJTanner/Azure/blob/main/Ansible/install-elk.yml) and [ansible.cfg](https://github.com/GarinJTanner/Azure/blob/main/Ansible/ansible.cfg) file to /etc/ansible.
+- Update the [ansible.cfg](https://github.com/GarinJTanner/Azure/blob/main/Ansible/ansible.cfg) file to include remote_user = azadmin
 - Run the playbook, and navigate to http://23.102.1.176:5601/app/kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
