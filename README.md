@@ -90,4 +90,4 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the [install-elk.yml](https://github.com/GarinJTanner/Azure/blob/main/Ansible/install-elk.yml) and [ansible.cfg](https://github.com/GarinJTanner/Azure/blob/main/Ansible/ansible.cfg) file to /etc/ansible.
 - Update the [ansible.cfg](https://github.com/GarinJTanner/Azure/blob/main/Ansible/ansible.cfg) file to include remote_user = azadmin
-- Run the playbook by typing 'ansible-playbook install-elk.yml'. Once finished, navigate to http://23.102.1.176:5601/app/kibana to check that the installation worked as expected.
+- Run the playbook by typing `ansible-playbook install-elk.yml`. Once finished, navigate to http://23.102.1.176:5601/app/kibana to check that the installation worked as expected.
